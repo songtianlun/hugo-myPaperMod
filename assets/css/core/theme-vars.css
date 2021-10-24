@@ -34,9 +34,6 @@
 
 .list {
     background: var(--code-bg);
-}
-
-.light {
     background-image: radial-gradient(rgb(216, 216, 216) 10%, transparent 10%);
     background-position: 0 0, 50px 50px;
     background-size: 30px 30px;
