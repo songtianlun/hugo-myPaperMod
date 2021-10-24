@@ -35,4 +35,9 @@
 
 .dark.list {
     background: var(--theme);
+    
+}
+
+.profile-index {
+    background-image: url(https://source.unsplash.com/random/1922x1080);
 }

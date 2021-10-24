@@ -6,8 +6,11 @@
 </head>
 
 <body class="
+{{- if (and .Site.Params.profileMode.enabled .IsHome) -}}
+{{- print "profile-index " -}}
+{{- end -}}
 {{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
-{{- print "list" -}}
+{{- print "list " -}}
 {{- end -}}
 {{- if eq $.Site.Params.defaultTheme `dark` -}}
 {{- print " dark" }}
