@@ -31,13 +31,20 @@
 
 .list {
     background: var(--code-bg);
+    background-image: radial-gradient(rgb(216, 216, 216) 10%, transparent 10%);
+    background-position: 0 0, 50px 50px;
+    background-size: 30px 30px;
 }
 
 .dark.list {
     background: var(--theme);
-    
+    background-image: radial-gradient(rgb(84, 84, 84) 10%, transparent 10%);
+    background-position: 0 0, 50px 50px;
+    background-size: 30px 30px;
 }
 
-.profile-index {
-    background-image: url(https://source.unsplash.com/random/1922x1080);
-}
+/* .profile-index {
+    background-image: radial-gradient(rgb(216, 216, 216) 10%, transparent 10%);
+    background-position: 0 0, 50px 50px;
+    background-size: 30px 30px;
+} */
