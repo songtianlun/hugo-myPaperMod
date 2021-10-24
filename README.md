@@ -25,6 +25,11 @@ The [demo](https://adityatelange.github.io/hugo-PaperMod/) includes a lot of doc
 
 ---
 
+## ToDO
+
+- [] 增加版权声明
+- [] 完善底部配置
+
 ## Features/Mods 💥
 
 -   Uses Hugo's asset generator with pipelining, fingerprinting, bundling and minification by default.
