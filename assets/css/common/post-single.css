@@ -37,7 +37,7 @@
     background-color: var(--theme);
     padding: 20px;
     border-radius: var(--radius);
-    box-shadow: 0px 0px 10px grey;
+    box-shadow: 0px 0px 6px grey;
 }
 
 .post-content h3,
@@ -278,7 +278,7 @@
     background: var(--theme);
     border-radius: var(--radius);
     padding: 0.4em;
-    box-shadow: 0px 0px 10px grey;
+    box-shadow: 0px 0px 6px grey;
 }
 
 .dark .toc {
@@ -329,6 +329,8 @@
     border-radius: var(--radius);
     background: var(--code-bg);
     border: 1px solid var(--border);
+    background-color: var(--theme);
+    box-shadow: 0px 0px 6px grey;
 }
 
 .post-tags a {
