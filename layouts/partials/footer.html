@@ -5,11 +5,15 @@
     {{- else }}
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span>
     {{- end }}
-    <span>
+    {{- if .Site.Params.Beian }}
+    <span> • <a href="http://beian.miit.gov.cn/">{{ .Site.Params.Beian }}</a></span>
+    {{- end}}
+    <!-- <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
-    </span>
+    </span> -->
+    <div><span><a>免责声明</a> • <a>隐私条款</a> • <a>关于</a> • <a>站点地图</a></span></div>
 </footer>
 {{- end }}
 
