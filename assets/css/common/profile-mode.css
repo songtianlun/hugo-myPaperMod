@@ -27,11 +27,13 @@
 }
 
 .button {
-    background: var(--tertiary);
+    /* background: var(--tertiary); */
+    background: var(--theme);
     border-radius: var(--radius);
     margin: 8px;
     padding: 6px;
     transition: transform 0.1s;
+    box-shadow: 0px 0px 3px grey;
 }
 
 .button-inner {
