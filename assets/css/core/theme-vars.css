@@ -27,10 +27,16 @@
     --hljs-bg: rgb(46, 46, 51);
     --code-bg: rgb(55, 56, 62);
     --border: rgb(51, 51, 51);
+    background-image: radial-gradient(rgb(46, 46, 46) 10%, transparent 10%);
+    background-position: 0 0, 50px 50px;
+    background-size: 30px 30px;
 }
 
 .list {
     background: var(--code-bg);
+}
+
+.light {
     background-image: radial-gradient(rgb(216, 216, 216) 10%, transparent 10%);
     background-position: 0 0, 50px 50px;
     background-size: 30px 30px;
@@ -38,7 +44,7 @@
 
 .dark.list {
     background: var(--theme);
-    background-image: radial-gradient(rgb(84, 84, 84) 10%, transparent 10%);
+    background-image: radial-gradient(rgb(46, 46, 46) 10%, transparent 10%);
     background-position: 0 0, 50px 50px;
     background-size: 30px 30px;
 }
