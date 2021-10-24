@@ -34,6 +34,10 @@
 
 .post-content {
     color: var(--content);
+    background-color: var(--theme);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: 0px 0px 10px grey;
 }
 
 .post-content h3,
@@ -130,6 +134,12 @@
 
 .post-content table {
     margin-bottom: 32px;
+    display: table;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    text-align: center;
 }
 
 .post-content table th,
@@ -142,7 +152,8 @@
 
 .post-content table th {
     font-size: 14px;
-    text-align: start;
+    text-align: center;
+    font-weight:bold;
 }
 
 .post-content table:not(.highlighttable) td code:only-child {
@@ -264,13 +275,15 @@
 .toc {
     margin: 0 2px 40px 2px;
     border: 1px solid var(--border);
-    background: var(--code-bg);
+    background: var(--theme);
     border-radius: var(--radius);
     padding: 0.4em;
+    box-shadow: 0px 0px 10px grey;
 }
 
 .dark .toc {
-    background: var(--entry);
+    /* background: var(--entry); */
+    background: var(--theme);
 }
 
 .toc details summary {
