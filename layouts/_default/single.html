@@ -31,6 +31,11 @@
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
+    <div class="post-meta">
+    </hr>
+      注：本作品采用<a rel="license" target="view_window" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议 </a>进行许可。
+    </div>
+    
   </div>
   {{- end }}
 
@@ -42,11 +47,11 @@
       {{- end }}
     </ul>
     {{- end }}
-    {{- if (.Param "ShowPostNavLinks") }}
-    {{- partial "post_nav_links.html" . }}
-    {{- end }}
     {{- if (and .Site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
     {{- partial "share_icons.html" . -}}
+    {{- end }}
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
     {{- end }}
   </footer>
 
