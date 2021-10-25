@@ -3,7 +3,7 @@
     {{- if .Site.Copyright }}
     <span>{{ .Site.Copyright | markdownify }}</span>
     {{- else }}
-    <span>&copy; {{ now.Year }} • <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span>
+    <span>Copyright &copy; {{ now.Year }} • <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a></span>
     {{- end }}
     {{- if .Site.Params.Beian }}
     <span> • <a href="http://beian.miit.gov.cn/" target="view_window">{{ .Site.Params.Beian }}</a></span>
@@ -14,12 +14,12 @@
         <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
     </span> -->
     <div><span>
-        <a target="view_window">版权声明</a>
-         • <a target="view_window">免责声明</a>
+        <!-- <a target="view_window">版权声明</a> -->
+        <a href="/about/">关于</a>
+        • <a href="/disclaimer">免责声明</a>
          <!-- • <a>隐私条款</a> -->
-         • <a href="/about/">关于</a>
-         • <a href="/sitemap.xml" target="view_window">站点地图
-        </a></span></div>
+         • <a href="/sitemap.xml" target="view_window">站点地图</a>
+    </span></div>
 </footer>
 {{- end }}
 
