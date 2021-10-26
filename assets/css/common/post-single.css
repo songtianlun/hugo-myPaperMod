@@ -6,6 +6,7 @@
 .post-title {
     margin-bottom: 2px;
     font-size: 40px;
+    font-family: 'Josefin Sans', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif
 }
 
 .post-description {
@@ -39,6 +40,7 @@
     padding: 20px;
     border-radius: var(--radius);
     box-shadow: 0px 0px 6px grey;
+    font-family: Georgia, -apple-system, 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif
 }
 
 .post-content h3,
@@ -133,14 +135,21 @@
     margin-top: 10px;
 }
 
+.post-content:after {
+    content: '  ';
+    display: table;
+    clear: both;   
+}
+
 .post-content table {
     margin-bottom: 32px;
     display: table;
     align-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 92%;
     text-align: center;
+    table-layout: fixed;
 }
 
 .post-content table th,
