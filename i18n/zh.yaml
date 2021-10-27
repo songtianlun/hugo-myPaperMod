@@ -23,3 +23,12 @@
 
 - id: code_copied
   translation: "已复制！"
+
+- id: page_about
+  translation: "关于"
+
+- id: page_disclaimer
+  translation: "免责声明"
+
+- id: page_site_map
+  translation: "站点地图"
