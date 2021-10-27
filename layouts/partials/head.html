@@ -158,8 +158,12 @@
 {{- partial "extend_head.html" . -}}
 
 <!-- Google Ads -->
-<script data-ad-client="ca-pub-6802937888103792" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- <script data-ad-client="ca-pub-6802937888103792" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
 
+{{- if .Site.Params.SiteVerificationTag }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.SiteVerificationTag }}"
+     crossorigin="anonymous"></script>
+{{- end }}
 <!-- 百度统计 -->
 <div style="display:none"><script src="https://hm.baidu.com/hm.js?c49e2f5be5e009382be07455c33b1394"></script></div>
 
