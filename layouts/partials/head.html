@@ -32,6 +32,9 @@
 {{- if .Site.Params.analytics.bing.SiteVerificationTag }}
 <meta name="msvalidate.01" content="{{ .Site.Params.analytics.bing.SiteVerificationTag }}" />
 {{- end }}
+{{- if .Site.Params.baiduUnionVerify }}
+<meta name="msvalidate.01" content="{{ .Site.Params.baiduUnionVerify }}" />
+{{- end }}
 
 {{- /* Styles */}}
 {{- $theme_vars := (resources.Get "css/core/theme-vars.css") }}
