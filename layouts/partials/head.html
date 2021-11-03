@@ -177,6 +177,12 @@
 <script async defer data-website-id="{{ .Site.Params.umamiCodeID }}" src="https://umami.frytea.com/umami.js"></script>
 {{- end }}
 
+<!-- pwa -->
+{{- if not .Site.Params.disablePWA }}
+<link rel="manifest" href="/manifest.json">
+{{- end }}
+
+
 
 <!-- <script>
 	var _hmt = _hmt || [];
