@@ -121,6 +121,23 @@
 <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
 {{ end -}}
 
+<!-- pwa -->
+{{- if not .Site.Params.disablePWA }}
+<link rel="manifest" href="/manifest.json">
+{{- end -}}
+
+<!-- Google Ads -->
+<!-- <script data-ad-client="ca-pub-6802937888103792" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+
+{{- if .Site.Params.googleAdSense }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.googleAdSense }}"
+     crossorigin="anonymous"></script>
+{{ end -}}
+
+{{- if .Site.Params.umamiCodeID }}
+<script async defer data-website-id="{{ .Site.Params.umamiCodeID }}" src="https://umami.frytea.com/umami.js"></script>
+{{ end -}}
+
 <noscript>
     <style>
         #theme-toggle,
@@ -163,27 +180,10 @@
 
 {{- partial "extend_head.html" . -}}
 
-<!-- Google Ads -->
-<!-- <script data-ad-client="ca-pub-6802937888103792" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
 
-{{- if .Site.Params.googleAdSense }}
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.googleAdSense }}"
-     crossorigin="anonymous"></script>
-{{- end }}
 <!-- 百度统计 -->
-<div style="display:none"><script src="https://hm.baidu.com/hm.js?c49e2f5be5e009382be07455c33b1394"></script></div>
-
-{{- if .Site.Params.umamiCodeID }}
-<script async defer data-website-id="{{ .Site.Params.umamiCodeID }}" src="https://umami.frytea.com/umami.js"></script>
-{{- end }}
-
-<!-- pwa -->
-{{- if not .Site.Params.disablePWA }}
-<link rel="manifest" href="/manifest.json">
-{{- end }}
-
-
-<!-- <script>
+<!-- <div style="display:none"><script src="https://hm.baidu.com/hm.js?c49e2f5be5e009382be07455c33b1394"></script></div> -->
+<script>
 	var _hmt = _hmt || [];
 	(function() {
 	  var hm = document.createElement("script");
@@ -191,7 +191,7 @@
 	  var s = document.getElementsByTagName("script")[0]; 
 	  s.parentNode.insertBefore(hm, s);
 	})();
-	</script> -->
+	</script>
 
 {{- /* Misc */}}
 {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
