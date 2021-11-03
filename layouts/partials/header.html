@@ -39,6 +39,11 @@
 </script>
 {{- end }}
 
+<!-- pwa -->
+{{- if not .Site.Params.disablePWA }}
+<link rel="manifest" href="/manifest.json">
+{{- end }}
+
 <header class="header">
     <nav class="nav">
         <div class="logo">
