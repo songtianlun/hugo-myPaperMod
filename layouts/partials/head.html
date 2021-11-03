@@ -32,6 +32,9 @@
 {{- if .Site.Params.analytics.bing.SiteVerificationTag }}
 <meta name="msvalidate.01" content="{{ .Site.Params.analytics.bing.SiteVerificationTag }}" />
 {{- end }}
+{{- if .Site.Params.analytics.baidu.SiteVerificationTag }}
+<meta name="baidu-site-verification" content="{{ .Site.Params.analytics.baidu.SiteVerificationTag }}" />
+{{- end }}
 {{- if .Site.Params.baiduUnionVerify }}
 <meta name="baidu_union_verify" content="{{ .Site.Params.baiduUnionVerify }}">
 {{- end }}
