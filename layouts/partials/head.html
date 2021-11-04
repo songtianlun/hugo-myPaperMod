@@ -130,9 +130,22 @@
 <!-- <script data-ad-client="ca-pub-6802937888103792" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
 
 {{- if .Site.Params.googleAdSense }}
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.googleAdSense }}"
-     crossorigin="anonymous"></script>
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.googleAdSense }}"
+     crossorigin="anonymous"></script> -->
+<script type="text/javascript">
+    function downloadJSAtOnload() {
+    var element = document.createElement("script");
+    element.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .Site.Params.googleAdSense }}";
+    document.body.appendChild(element);
+    }
+    if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+</script>
 {{ end -}}
+
 
 {{- if .Site.Params.umamiCodeID }}
 <script async defer data-website-id="{{ .Site.Params.umamiCodeID }}" src="https://umami.frytea.com/umami.js"></script>
