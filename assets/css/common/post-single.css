@@ -259,7 +259,7 @@
 .post-content img {
     border-radius: 8px;
     margin: auto;
-    max-width: 80%;
+    max-width: 96%;
     border: 2px solid var(--theme);
     box-shadow: 4px 4px 12px gray;
 }
