@@ -69,7 +69,11 @@ sInput.onkeyup = function (e) {
             let resultSet = ''; // our results bucket
 
             for (let item in results) {
-                resultSet += `<li class="post-entry"><header class="entry-header">${results[item].item.title}&nbsp;»</header>` +
+				console.log(results[item].item)
+                resultSet += 
+				    `<li class="post-entry">` +
+					`<header class="entry-header">${results[item].item.title}&nbsp;»</header>` +
+					`<section class="entry-content"><p>${results[item].item.description}...</p></section>` +
                     `<a href="${results[item].item.permalink}" aria-label="${results[item].item.title}"></a></li>`
             }
 
