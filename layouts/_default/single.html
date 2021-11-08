@@ -24,9 +24,9 @@
   {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
   {{- if (.Param "ShowToc") }}
   {{- partial "toc.html" . }}
-  {{- if .Site.Params.googleAdSense }}
   {{- end }}
 
+<!--  {{- if .Site.Params.googleAdSense }}-->
 <!--  &lt;!&ndash; header-ad &ndash;&gt;-->
 <!--  <ins class="adsbygoogle"-->
 <!--       style="display:block"-->
