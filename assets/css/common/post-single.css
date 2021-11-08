@@ -35,6 +35,7 @@
 }
 
 .post-content {
+    margin: 40px 0px 0px 0px;
     color: var(--content);
     background-color: var(--theme);
     padding: 20px;
