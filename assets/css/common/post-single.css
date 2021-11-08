@@ -35,7 +35,7 @@
 }
 
 .post-content {
-    margin: 40px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     color: var(--content);
     background-color: var(--theme);
     padding: 20px;
@@ -287,7 +287,7 @@
 }
 
 .toc {
-    margin: 0 2px 40px 2px;
+    margin: 0 2px 20px 2px;
     border: 1px solid var(--border);
     background: var(--theme);
     border-radius: var(--radius);
