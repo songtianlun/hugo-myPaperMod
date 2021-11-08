@@ -25,20 +25,19 @@
   {{- if (.Param "ShowToc") }}
   {{- partial "toc.html" . }}
   {{- if .Site.Params.googleAdSense }}
-  <!-- header-ad -->
-  <ins class="adsbygoogle"
-       style="display:block"
-       data-ad-client="{{ .Site.Params.googleAdSense }}"
-       data-ad-slot="9161921641"
-       data-ad-format="auto"
-       data-full-width-responsive="true"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-  {{ end -}}
   {{- end }}
 
-
+<!--  &lt;!&ndash; header-ad &ndash;&gt;-->
+<!--  <ins class="adsbygoogle"-->
+<!--       style="display:block"-->
+<!--       data-ad-client="{{ .Site.Params.googleAdSense }}"-->
+<!--       data-ad-slot="9161921641"-->
+<!--       data-ad-format="auto"-->
+<!--       data-full-width-responsive="true"></ins>-->
+<!--  <script>-->
+<!--    (adsbygoogle = window.adsbygoogle || []).push({});-->
+<!--  </script>-->
+<!--  {{ end -}}-->
 
   {{- if .Content }}
   <div class="post-content">
