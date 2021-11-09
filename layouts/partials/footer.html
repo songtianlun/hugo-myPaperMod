@@ -19,6 +19,9 @@
         • <a href="/disclaimer/">{{ i18n "page_disclaimer" }}</a>
          <!-- • <a>隐私条款</a> -->
          • <a href="/sitemap.xml" target="view_window">{{ i18n "page_site_map" }}</a>
+        {{- if .Site.Params.ShowWormhole }}
+         • <a href="https://www.foreverblog.cn/go.html" target="view_window">{{ i18n "wormhole" }}</a>
+        {{- end}}
     </span></div>
 </footer>
 {{- end }}

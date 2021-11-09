@@ -32,3 +32,6 @@
 
 - id: page_site_map
   translation: "SiteMap"
+
+- id: wormhole
+  translation: "Wormhole"

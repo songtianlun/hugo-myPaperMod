@@ -32,3 +32,6 @@
 
 - id: page_site_map
   translation: "站点地图"
+
+- id: wormhole
+  translation: "虫洞"
