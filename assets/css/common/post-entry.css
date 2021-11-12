@@ -40,9 +40,10 @@
     /* background: var(--entry); */
     background: var(--theme);
     border-radius: var(--radius);
-    transition: transform 0.1s;
+    /*transition: transform 0.1s;*/
     border: 1px solid var(--border);
     box-shadow: 0px 0px 6px grey;
+    transition: background 0.4s ease-out;
 }
 
 .post-entry:active {

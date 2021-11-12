@@ -1,7 +1,7 @@
 .buttons,
 .main .profile {
     display: flex;
-    justify-content: center;  
+    justify-content: center;
 }
 
 .main .profile {
@@ -32,8 +32,9 @@
     border-radius: var(--radius);
     margin: 8px;
     padding: 6px;
-    transition: transform 0.1s;
+    /*transition: transform 0.1s;*/
     box-shadow: 0px 0px 3px grey;
+    transition: background 0.4s ease-out;
 }
 
 .button-inner {

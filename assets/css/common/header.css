@@ -48,6 +48,7 @@ button#theme-toggle {
 body.dark #moon {
     vertical-align: middle;
     display: none;
+    transition: background-position 0.4s steps(5);
 }
 
 body:not(.dark) #sun {
