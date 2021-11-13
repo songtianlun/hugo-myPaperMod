@@ -22,6 +22,9 @@
         {{- if .Site.Params.ShowWormhole }}
          • <a href="https://www.foreverblog.cn/go.html" target="view_window">{{ i18n "wormhole" }}</a>
         {{- end}}
+        {{- if (not .Site.Params.disableBuSuanZi) }}
+         • PV <span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span>
+        {{- end}}
     </span></div>
 </footer>
 {{- end }}

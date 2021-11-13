@@ -151,6 +151,12 @@
 <script async defer data-website-id="{{ .Site.Params.umamiCodeID }}" src="https://umami.frytea.com/umami.js"></script>
 {{ end -}}
 
+{{- if (not .Site.Params.disableBuSuanZi) }}
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+{{- end }}
+
+
 <noscript>
     <style>
         #theme-toggle,
@@ -201,7 +207,7 @@
 	(function() {
 	  var hm = document.createElement("script");
 	  hm.src = "https://hm.baidu.com/hm.js?c49e2f5be5e009382be07455c33b1394";
-	  var s = document.getElementsByTagName("script")[0]; 
+	  var s = document.getElementsByTagName("script")[0];
 	  s.parentNode.insertBefore(hm, s);
 	})();
 	</script>
