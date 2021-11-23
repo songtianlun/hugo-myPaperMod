@@ -44,6 +44,18 @@
 
   {{- if .Content }}
   <div class="post-content">
+    {{- if and (.Site.Params.ShowReprinted) (not .Params.DisableReprinted) }}
+    <blockquote>
+      <p style="text-align:center;text-indent:0rem">本文（
+        <a href="{{ .Permalink }}">《{{ .Title }}》</a>
+        ）首发于
+        <a href="{{ $.Site.BaseURL }}">「{{ $.Site.Params.ProfileMode.Title }}」</a>
+        ，
+        <a href="/disclaimer/">转载</a> 请注明
+        <a href="{{ .Permalink }}">来源</a>。
+      </p>
+    </blockquote>
+    {{ end -}}
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}

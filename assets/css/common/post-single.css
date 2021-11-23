@@ -167,10 +167,33 @@
     border-bottom: 1px solid var(--border);
 }
 
+/*关键设置 tbody出现滚动条*/
+.post-content table tbody {
+    display: block;
+    overflow-y: scroll;
+}
+
+.post-content table thead,
+tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+/*关键设置：滚动条默认宽度是16px 将thead的宽度减16px*/
+.post-content table thead {
+    width: calc( 100% - 1em)
+}
+
 .post-content table th {
     font-size: 14px;
     text-align: center;
     font-weight:bold;
+}
+
+.post-content table td {
+    font-size: 14px;
+    text-align: center;
+    /*font-weight: lighter;*/
 }
 
 .post-content table:not(.highlighttable) td code:only-child {
