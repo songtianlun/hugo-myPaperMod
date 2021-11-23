@@ -5,14 +5,16 @@
 
 .post-title {
     margin-bottom: 2px;
-    font-size: 40px;
-    font-family: 'Josefin Sans', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif
+    font-size: 32px;
+    /*font-family: 'Josefin Sans', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;*/
+    /*font-family: 'STSong', sans-serif;*/
 }
 
 .post-description {
     color: var(--secondary);
     margin-top: 10px;
     margin-bottom: 5px;
+    font-size: 14px;
 }
 
 .post-meta,
@@ -41,7 +43,6 @@
     padding: 20px;
     border-radius: var(--radius);
     box-shadow: 0px 0px 6px grey;
-    font-family: Georgia, -apple-system, 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
     transition: background 0.4s ease-out;
 }
 
@@ -295,7 +296,7 @@ tbody tr {
 .post-content img {
     border-radius: 8px;
     margin: auto;
-    max-width: 96%;
+    max-width: 100%;
     border: 2px solid var(--theme);
     box-shadow: 4px 4px 12px gray;
 }
