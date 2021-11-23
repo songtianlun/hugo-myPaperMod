@@ -105,6 +105,7 @@
 
 .post-content p {
     text-indent: 2rem;
+	font-family: Georgia, 'STSong', 'Microsoft YaHei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
 }
 
 .post-content ol,
@@ -162,8 +163,8 @@
 
 .post-content table th,
 .post-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
-    min-width: 80px;
-    padding: 12px 8px;
+    min-width: 60px;
+    padding: 12px 0.5px;
     line-height: 1.5;
     border-bottom: 1px solid var(--border);
 }
@@ -279,6 +280,7 @@ tbody tr {
 
 .post-content blockquote p {
     margin-bottom: 0;
+	text-indent: 0rem
 }
 
 .post-content hr {

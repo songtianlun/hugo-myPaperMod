@@ -4,7 +4,7 @@
     max-width: calc(var(--main-width) + var(--gap) * 2);
     margin: auto;
     padding: var(--gap);
-    font-family: Georgia, "STSong",'STXihei' ,-apple-system ,'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
+    font-family: Georgia, 'STXihei' ,-apple-system , 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
     letter-spacing: 1px;
 }
 
