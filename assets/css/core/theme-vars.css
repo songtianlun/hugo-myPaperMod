@@ -7,7 +7,7 @@
     --footer-height: 84px;
     --radius: 8px;
     --theme: rgb(255, 255, 255);
-    --entry: rgb(255, 255, 255);
+    --entry: rgb(245, 245, 245);
     --primary: rgb(30, 30, 30);
     --secondary: rgb(108, 108, 108);
     --tertiary: rgb(214, 214, 214);
@@ -33,7 +33,12 @@
 }
 
 .list {
-    background: var(--code-bg);
+    background: var(--theme);
+    background-image: 
+        linear-gradient(var(--entry) 1px, transparent 0),
+        linear-gradient(90deg, var(--entry) 1px, transparent 0);
+    background-size: 25px 25px;
+    background-repeat: repeat;
     /* background-image: radial-gradient(rgb(216, 216, 216) 10%, transparent 10%);
     background-position: 0 0, 50px 50px;
     background-size: 30px 30px; */
@@ -52,6 +57,11 @@
 
 .dark.list {
     background: var(--theme);
+    background-image: 
+        linear-gradient(var(--entry) 1px, transparent 0),
+        linear-gradient(90deg, var(--entry) 1px, transparent 0);
+    background-size: 25px 25px;
+    background-repeat: repeat;
     /* background-image: radial-gradient(rgb(46, 46, 46) 10%, transparent 10%);
     background-position: 0 0, 50px 50px;
     background-size: 30px 30px; */

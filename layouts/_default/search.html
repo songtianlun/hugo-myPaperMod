@@ -20,9 +20,11 @@
     {{- end }}
 </header>
 
+
 <div id="searchbox">
     <input id="searchInput" autofocus placeholder="{{ .Params.placeholder | default (printf "%s ↵" .Title) }}" aria-label="search" type="search">
     <ul id="searchResults" aria-label="search results"></ul>
+</div>
 </div>
 
 {{- if .Params.archiveTitle }}
@@ -43,6 +45,7 @@
 
 {{- range $pages.GroupByPublishDate "2006" }}
 {{- if ne .Key "0001" }}
+<div class="post-content">
 <div class="archive-year">
     <h2 class="archive-year-header">
         {{- replace .Key "0001" "" }}<sup class="archive-count">&nbsp;&nbsp;{{ len .Pages }}</sup>
@@ -68,6 +71,7 @@
         </div>
     </div>
     {{- end }}
+</div>
 </div>
 {{- end }}
 {{- end }}
