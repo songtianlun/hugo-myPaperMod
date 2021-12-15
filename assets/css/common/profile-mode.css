@@ -12,6 +12,7 @@
 
 .profile .profile_inner h1 {
     padding: 12px 0;
+    text-shadow: grey 0.1em 0.1em 0.1em
 }
 
 .profile img {
@@ -24,6 +25,7 @@
     flex-wrap: wrap;
     max-width: 400px;
     margin: 0 auto;
+    text-shadow: grey 0.1em 0.1em 0.1em
 }
 
 .button {

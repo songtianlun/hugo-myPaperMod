@@ -10,6 +10,10 @@
     /*font-family: 'STSong', sans-serif;*/
 }
 
+.post-title a {
+    text-shadow: grey 0.1em 0.1em 0.1em
+}
+
 .post-description {
     color: var(--secondary);
     margin-top: 10px;

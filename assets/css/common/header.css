@@ -16,6 +16,7 @@
 #menu {
     display: flex;
     margin: auto var(--gap);
+    text-shadow: grey 0.2em 0.2em 0.2em
 }
 
 .logo {
@@ -56,6 +57,7 @@ body:not(.dark) #sun {
 }
 
 #menu {
+    padding-right: 10px;
     list-style: none;
     word-break: keep-all;
     overflow-x: auto;
@@ -68,7 +70,8 @@ body:not(.dark) #sun {
 }
 
 #menu a {
-    font-size: 16px;
+    font-size: 20px;
+    text-shadow: grey 0.1em 0.1em 0.2em
 }
 
 #menu .active {

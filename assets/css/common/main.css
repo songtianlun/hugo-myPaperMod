@@ -10,6 +10,7 @@
 
 .page-header h1 {
     font-size: 40px;
+    text-shadow: grey 0.1em 0.1em 0.1em
 }
 
 .pagination {
