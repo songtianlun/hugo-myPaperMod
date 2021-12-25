@@ -27,8 +27,9 @@ The [demo](https://adityatelange.github.io/hugo-PaperMod/) includes a lot of doc
 
 ## ToDO
 
-- [] 增加版权声明
-- [] 完善底部配置
+ - [x] 增加版权声明；
+ - [x] 完善底部配置；
+ - [x] 增加 `music` 短代码；
 
 ## Features/Mods 💥
 
@@ -57,6 +58,10 @@ The [demo](https://adityatelange.github.io/hugo-PaperMod/) includes a lot of doc
 Read Wiki For More Details => **[PaperMod - Features](https://github.com/adityatelange/hugo-PaperMod/wiki/Features)**
 
 ---
+
+## Extended Features
+
+- Music player shortcode supported by [APlayer](https://github.com/MoePlayer/APlayer) and [MetingJS](https://github.com/metowolf/MetingJS)
 
 ## Install/Update 📥
 
