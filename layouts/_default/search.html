@@ -29,7 +29,10 @@
 
 {{- if .Params.archiveTitle }}
 <header class="page-header">
-    <h1>{{ .Params.archiveTitle }}</h1>
+    <h1>
+        {{ .Params.archiveTitle }}
+        <sup class="archive-count">&nbsp;&nbsp;{{ len site.RegularPages }}</sup>
+    </h1>
     {{- if .Params.archiveDescription }}
     <div class="post-description">
         {{ .Params.archiveDescription }}
