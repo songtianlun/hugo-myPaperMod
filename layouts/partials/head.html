@@ -101,6 +101,16 @@
 {{- end }}
 {{- end }}
 
+<!-- valine -->
+{{- if .Site.Params.shuoshuo.enable -}}
+<script src='//staticfile-cdn.frytea.com/valine@1.5.1/dist/Valine.min.js'></script>
+{{- end -}}
+
+<!-- artitalk 说说/微语 -->
+{{- if .Site.Params.shuoshuo.enable -}}
+<script type="text/javascript" src="//staticfile-cdn.frytea.com/artitalk@3.3.4/artitalk.js"></script>
+{{- end -}}
+
 {{- /* Favicons */}}
 <link rel="icon" href="{{ .Site.Params.assets.favicon | default "favicon.ico" | absURL }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.Params.assets.favicon16x16 | default "favicon-16x16.png" | absURL }}">
