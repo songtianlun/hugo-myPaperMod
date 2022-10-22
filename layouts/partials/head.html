@@ -106,6 +106,15 @@
 <script src='//staticfile-cdn.frytea.com/valine@1.5.1/dist/Valine.min.js'></script>
 {{- end -}}
 
+<!-- waline -->
+{{- if .Site.Params.shuoshuo.enable -}}
+<script src='//staticfile-cdn.frytea.com/@waline/client@2.13.0/dist/waline.js'></script>
+<link
+        rel="stylesheet"
+        href="//staticfile-cdn.frytea.com/@waline/client@2.13.0/dist/waline.css"
+/>
+{{- end -}}
+
 <!-- artitalk 说说/微语 -->
 {{- if .Site.Params.shuoshuo.enable -}}
 <script type="text/javascript" src="//staticfile-cdn.frytea.com/artitalk@3.3.4/artitalk.js"></script>
