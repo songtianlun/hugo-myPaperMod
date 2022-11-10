@@ -17,11 +17,11 @@
       {{- partial "post_meta.html" . -}}
       {{- partial "translation_list.html" . -}}
       {{- partial "edit_post.html" . -}}
-      {{- if .Site.Params.waline.enable -}}
-      <span> | <span class="waline-pageview-count" data-path="{{ .URL | relURL }}"
-      ><i class="fa fa-spinner fa-spin"></i></span> Hits</span>
+      {{- if .Site.Params.waline.pageviewCount -}}
+      <span> | <span class="waline-pageview-count" data-path="{{ .Permalink | relURL }}">
+        <i class="fa fa-spinner fa-spin"></i></span> Hits</span>
       {{- else if .Site.Params.valine.enable -}}
-      <span id="{{ .URL | relURL }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
+      <span id="{{ .Permalink | relURL }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
       &nbsp;| &nbsp;<span class="leancloud-visitors-count"><i class="fa fa-spinner fa-spin"></i></span>&nbsp;Hits
       </span>
       {{- else if (not .Site.Params.disableBuSuanZi) }}

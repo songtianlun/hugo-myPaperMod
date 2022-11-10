@@ -39,6 +39,12 @@
 <meta name="baidu_union_verify" content="{{ .Site.Params.baiduUnionVerify }}">
 {{- end }}
 
+<!-- waline -->
+{{- if .Site.Params.waline.enable -}}
+<script src='//staticfile-cdn.frytea.com/@waline/client@2.13.0/dist/waline.js'></script>
+<link rel="stylesheet" href="//staticfile-cdn.frytea.com/@waline/client@2.13.0/dist/waline.css"/>
+{{- end -}}
+
 {{- /* Styles */}}
 {{- $theme_vars := (resources.Get "css/core/theme-vars.css") }}
 {{- $reset := (resources.Get "css/core/reset.css") }}
@@ -104,15 +110,6 @@
 <!-- valine -->
 {{- if .Site.Params.shuoshuo.enable -}}
 <script src='//staticfile-cdn.frytea.com/valine@1.5.1/dist/Valine.min.js'></script>
-{{- end -}}
-
-<!-- waline -->
-{{- if .Site.Params.shuoshuo.enable -}}
-<script src='//staticfile-cdn.frytea.com/@waline/client@2.13.0/dist/waline.js'></script>
-<link
-        rel="stylesheet"
-        href="//staticfile-cdn.frytea.com/@waline/client@2.13.0/dist/waline.css"
-/>
 {{- end -}}
 
 <!-- artitalk 说说/微语 -->
