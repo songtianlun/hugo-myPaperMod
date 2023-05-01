@@ -62,7 +62,7 @@ body:not(.dark) #sun {
     word-break: keep-all;
     overflow-x: auto;
     white-space: nowrap;
-    font-family: 'Josefin Sans', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif
+/*    font-family: 'Josefin Sans', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif*/
 }
 
 #menu li + li {
