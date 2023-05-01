@@ -41,8 +41,8 @@
 
 <!-- waline -->
 {{- if .Site.Params.waline.enable -}}
-<script src='//staticfile-cdn.frytea.com/@waline/client@2.13.0/dist/waline.js'></script>
-<link rel="stylesheet" href="//staticfile-cdn.frytea.com/@waline/client@2.13.0/dist/waline.css"/>
+<script src='/libs/waline-2.13.0/waline.js'></script>
+<link rel="stylesheet" href="/libs/waline-2.13.0/waline.css"/>
 {{- end -}}
 
 {{- /* Styles */}}
@@ -107,16 +107,6 @@
 {{- end }}
 {{- end }}
 
-<!-- valine -->
-{{- if .Site.Params.shuoshuo.enable -}}
-<script src='//staticfile-cdn.frytea.com/valine@1.5.1/dist/Valine.min.js'></script>
-{{- end -}}
-
-<!-- artitalk 说说/微语 -->
-{{- if .Site.Params.shuoshuo.enable -}}
-<script type="text/javascript" src="//staticfile-cdn.frytea.com/artitalk@3.3.4/artitalk.js"></script>
-{{- end -}}
-
 {{- /* Favicons */}}
 <link rel="icon" href="{{ .Site.Params.assets.favicon | default "favicon.ico" | absURL }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ .Site.Params.assets.favicon16x16 | default "favicon-16x16.png" | absURL }}">
@@ -142,14 +132,6 @@
 <link rel="manifest" href="/manifest.json">
 {{- end -}}
 
-<!-- music -->
-{{- if not .Site.Params.disableAPlayer }}
-<!-- require APlayer -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script> -->
-<script src="https://staticfile-cdn.frytea.com/aplayer@1.10.1/dist/APlayer.min.js.map"></script>
-<!-- require MetingJS -->
-<script src="https://staticfile-cdn.frytea.com/meting@2.0.1/dist/Meting.min.js"></script>
-{{- end -}}
 
 <!-- Google Ads -->
 <!-- <script data-ad-client="ca-pub-6802937888103792" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
@@ -174,13 +156,19 @@
 
 {{- if .Site.Params.umamiCodeID }}
 <script async defer data-website-id="{{ .Site.Params.umamiCodeID }}" src="https://umami.frytea.com/umami.js"></script>
-<script async defer data-website-id="460b58e0-655d-42d7-926c-7a44aeb5730f" src="https://frytea-umami.onrender.com/umami.js"></script>
 {{ end -}}
 
 {{- if (not .Site.Params.disableBuSuanZi) }}
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<link rel="stylesheet" href="//staticfile-cdn.frytea.com/font-awesome@4.3.0/css/font-awesome.min.css">
+<!-- require busuanzi -->
+{{- $busuanzi := resources.Get "js/busuanzi.pure.mini.js" -}}
+<script async src="{{ $busuanzi.Permalink }}"></script>
+
+<!-- require font-awesome -->
+<link rel="stylesheet" href="/libs/font-awesome-4.7.0/css/font-awesome.min.css">
+
+
 {{- end }}
+
 
 
 <noscript>
@@ -241,7 +229,6 @@
 {{- /* Misc */}}
 {{- if hugo.IsProduction | or (eq .Site.Params.env "production") }}
 {{- template "_internal/google_analytics.html" . }}
-{{- template "_internal/google_news.html" . }}
 {{- template "partials/templates/opengraph.html" . }}
 {{- template "partials/templates/twitter_cards.html" . }}
 {{- template "partials/templates/schema_json.html" . }}

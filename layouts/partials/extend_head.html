@@ -2,7 +2,8 @@
 {{- /*     Insert any custom code (web-analytics, resources, etc.) - it will appear in the <head></head> section of every page. */ -}}
 <!-- Mermaid -->
 {{- if not .Site.Params.disableMermaid }}
-<script src="https://staticfile-cdn.frytea.com/mermaid@9.2.2/dist/mermaid.min.js"></script>
+{{- $mermaid := resources.Get "js/mermaid.min.js" -}}
+<script src="{{ $mermaid.Permalink }}" crossorigin="anonymous"></script>
 <script>
     // 自定义mermaid配置
     const config = {
