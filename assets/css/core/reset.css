@@ -24,7 +24,7 @@ h6 {
 
 @font-face {
   font-family: "LXGWWenKai-Regular";
-  src: url("/fonts/lxgw-wenkai/LXGWWenKai-Regular.ttf") format("truetype");
+  src: url("https://cdn.jsdelivr.net/npm/lxgwwenkai-web@0.1.2/LXGWWenKai-Regular.ttf") format("truetype");
 }
 
 
